@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack(spacing: 20) {
-            RoundedRectangle(cornerRadius: 15)
+            RoundedBottomRectangle(curveOffset: 30)
                 .fill(Color.orange)
                 .frame(height: 120)
                 .shadow(radius: 8)
@@ -31,7 +31,7 @@ struct ContentView: View {
                 .padding()
                 .padding(.bottom)
                 .background(
-                    RoundedRectangle(cornerRadius: 15)
+                    RoundedBottomRectangle(curveOffset: -30)
                         .fill(Color.orange)
                         .shadow(radius: 4, y: 4))
             Spacer()
